@@ -1,0 +1,1301 @@
+<!--
+  +-- Made By Robert Bamba --+
+  +-- All Ownerships go to Robert Bamba||2021© --+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "icon" type = "image/png" href = "img/icon/icon1.png">
+  <title>Ice Cream</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body id="body">
+
+  <div class="cursor"></div>
+  <div id="cursor">
+    <div class="cursor-circle"></div>
+  </div>
+  <div class="wrapper" id="wrapper">
+
+    <!-- Navigation "fixed" -->
+
+    <div class="nav_container_sticky" id="nav">
+      <div class="nav_sticky">
+        <div class="logo_container_sticky">
+          <img src="img/bg.png" alt="">
+          <div class="logo_sticky">
+            Ice <br> <span>Cream</span>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#specials">Our Specials</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="./menu/index.html">Our Menu</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#" onclick="order_open()">Order Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Navigation "absolute" -->
+
+    <div class="nav_container">
+      <div class="nav">
+        <div class="logo_container">
+          <div class="logo">
+            Ice <br> <span>Cream</span>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#specials">Our Specials</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="./menu/index.html">Our Menu</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#" onclick="order_open()">Order Now</a></li>
+          </ul>
+        </nav>
+        <i class="fas fa-shopping-cart cart"></i>
+        <span class="items" onclick="order_open()">7</span>
+      </div>
+    </div>
+
+    <!-- home -->
+    
+    <section class="home" id="home">
+      <div class="home_content">
+        <div class="today">
+          TODAYS SPECIAL! <br>
+          <i class="fas fa-long-arrow-alt-down"></i>
+        </div>
+        <div class="home_content_title_container">
+          <div class="home_content_title">
+            <span>Our Famous</span>
+            <br>
+            <span>Chocolate</span>
+            <br>
+            <span>Delight!</span>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ex repellat praesentium, illo eveniet voluptate
+          ullam sed dolorum officia, soluta sit voluptas! Incidunt autem eveniet esse veritatis pariatur numquam fugit?
+        </p>
+        <div class="home_link">
+          <a href="#" onclick="order_open()">Buy Now</a>
+          <a href="./menu/index.html">See More</a>
+        </div>
+      </div>
+      <div class="arrows">
+        <i class="fas fa-angle-left"></i>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <img class="home_img" src="img/home/img1.png" alt="">
+    </section>
+
+    <!-- Our specials -->
+
+    <section class="specials_container" id="specials">
+      <div class="arrows">
+        <i class="fas fa-angle-left"></i>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="specials">
+        <div class="title_specials">
+          <h4>Theme this month</h4>
+          <h1>CHILDHOOD <br> Favorites</h1>
+          <p>The Clasics are back and better!</p>
+        </div>
+        <div class="card_section">
+          <div class="card_container">
+            <div class="card_wrapper" id="card" onmouseover="on()" onmouseout="off()">
+              <div class="card_head card_head_bg">
+                <img src="img/home/img3.png" alt="">
+                <div class="logo_container">
+                  <div class="logo"> 
+                    Ice <br> <span>Cream</span>
+                  </div>
+                </div>
+                <div class="specials_title">
+                  <h1>Flavor Name</h1>
+                  <p>Our Special Iftar <br> Ice Cream is <span>BACK</span>&excl;</p>
+                </div>
+                <div class="backdrop">NEW</div>
+              </div>
+              <div class="card_bottom">
+                <div class="specials_title">
+                  <h1>Flavor Name</h1>
+                  <div class="date">new</div>
+                </div>
+                <div class="special_discription">
+                  Our Special Iftar Flavor
+                </div>
+                <span class="special_rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <br>
+                <div class="special_size">
+                  <div>size</div>
+                  <span>
+                    <p>XS</p>
+                    <p>S</p>
+                    <p>M</p>
+                    <p>L</p>
+                    <p>XL</p>
+                  </span>
+                </div>
+                <div class="card_footer">
+                  <div class="special_order">
+                    <a href="#">Buy Now</a>
+                  </div>
+                </div>       
+              </div>
+              <div class="card_price_container">
+                <div class="card_price">
+                  5.00<span>AED</span>
+                </div>
+              </div>
+            </div>
+  
+            <!-- The other card -->
+  
+            <div class="card_wrapper2">
+              <div class="card_head">
+                <img src="img/specials/milk.png" class="img2" alt="">
+                <div class="logo_container">
+                  <div class="logo"> 
+                    Ice <br> <span>Cream</span>
+                  </div>
+                </div>
+                <div class="specials_title">
+                  <h1>Flavor Name</h1>
+                  <p>Our Special Iftar <br> Ice Cream is <span>BACK</span>&excl;</p>
+                </div>
+                <div class="backdrop">NEW</div>
+              </div>
+              <div class="card_bottom">
+                <div class="specials_title">
+                  <h1>Flavor Name</h1>
+                  <div class="date">new</div>
+                </div>
+                <div class="special_discription">
+                  Our Special Iftar Flavor
+                </div>
+                <span class="special_rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <br>
+                <div class="special_size">
+                  <div>size</div>
+                  <span>
+                    <p>XS</p>
+                    <p>S</p>
+                    <p>M</p>
+                    <p>L</p>
+                    <p>XL</p>
+                  </span>
+                </div>
+                <div class="card_footer">
+                  <div class="special_order">
+                    <a href="#">Buy Now</a>
+                  </div>
+                  <div class="card_price">
+                    25.00<span>AED</span>
+                  </div>
+                </div>       
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about Us -->
+
+    <section class="about_us" id="about">
+      <div class="border_bottom_about"></div>
+      <div class="about_us_main">
+        <div class="about_circle_bg"></div>
+        <div class="swiper-container My_swipper_about">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="about_us_img">
+                <img src="img/about_us/img5.png" alt="">
+                <img src="img/about_us/img4.png" alt="">
+                <img src="img/about_us/img3.png" alt="">
+              </div>
+              <div class="about_us_content">
+                <h1><span>Ice Cream</span> <div>and</div> <span>Milk Shakes</span></h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                  Ducimus eius molestias ratione numquam sint, molestiae, autem suscipit, accusantium possimus labore vero. 
+                  Nulla corporis vel quidem optio doloribus exercitationem maiores debitis cupiditate quo cumque ut, dignissimos illo itaque, amet porro culpa.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="about_us_img">
+                <img class="vivi" src="img/about_us/vivi_pic.jpg" alt="">
+              </div>
+              <div class="about_us_content">
+                <h1><div>The</div> <span>ORIGIN</span></h1>
+                <p>
+                  This Website was creted because I wanted to test my skills in website design and construction. This is also my project for my TLE and ICT subjects.
+                  <br>
+                  -Robert Bamba
+                  <br><br>
+                  <span>Ps: I dont have a good photo of my face right now so here's a photo of my pet hamster vivi wearing a sombrero✨✨🐹🐹🐹🐹</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="about_us_img">
+                <img class="store" src="img/about_us/store.jpg" alt="">
+              </div>
+              <div class="about_us_content">
+                <h1><div>Our stores </div><span>Around the World</span></h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus eius molestias ratione numquam sint, molestiae, autem suscipit, accusantium possimus labore vero. 
+                  Nulla corporis vel quidem optio doloribus exercitationem maiores debitis cupiditate quo cumque ut, dignissimos illo itaque, amet porro culpa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>     
+          <div class="swiper-button-prev">
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fas fa-angle-right"></i> 
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- comercial -->
+
+    <section class="video_container" id="video">
+      <div class="video">
+        <div class="main_video">
+          <img onclick="video_play()" class="img1" id="play" src="./img/video/poster.JPG" alt=""> 
+          <img onclick="video_play()" class="img2" id="play" src="./img/bg.png" alt="">
+          <h1>Ice Cream</h1>
+          <img onclick="video_play()" class="img3" id="play" src="./img/video/play-button.svg" alt="">
+        </div>
+      </div>
+    </section>
+    
+    <!-- menu -->
+
+    <section class="menu_container">
+      <div class="menu">
+        <h1 class="about_title">Our Menu</h1>
+        <p class="about_title_discription">
+          See Our Ice Cream and <br>
+          Milkshakes
+        </p>
+        <span class="specials_menu">
+          See Our Best of the Best
+        </span>
+        <div class="menu_showcase" id="menu_scroll">
+          <div class="menu_card">
+            <img src="./img/menu/img5.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img6.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img5.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img6.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img6.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img6.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img6.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img6.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img6.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img6.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="menu_card">
+            <img src="./img/menu/img6.jpg" alt="">
+            <div class="card_menu_content">
+              <h1>Flavor Name</h1>
+              <p>short description of flavor</p>
+              <span class="card_menu_rating"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+              <div class="menu_size">
+                <div>size</div>
+                <span>
+                  <p>XS</p>
+                  <p>S</p>
+                  <p>M</p>
+                  <p>L</p>
+                  <p>XL</p>
+                </span>
+              </div>
+              <br>
+              <div class="menu_cost_container">
+                <div class="menu_const">5.00 <span>AED</span></div>
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="See_More_menu">
+          <img src="./img/menu/img3.jpg" alt="">
+          <div class="See_More_menu_content">
+            <h1>See Our Other Stuff</h1>
+            <p>
+              See More of our Ice Cream and Milkshakes.
+            </p>
+
+            <a href="./menu/index.html">
+              See Our Menu
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section class="testemonials_container" id="testimonial">
+      <div class="testimonials">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial_card">
+                <img src="./img/testimonials/img1.jpg" alt="">
+                <h1>Haechan</h1>
+                <span class="card_menu_rating"> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="testimonial_content">
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque itaque atque architecto ad, natus quos illum quasi dolores voluptas rerum, deleniti sunt rem."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_card">
+                <img src="./img/testimonials/img1.jpg" alt="">
+                <h1>Yes to 変態</h1>
+                <span class="card_menu_rating"> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="testimonial_content">
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque itaque atque architecto ad, natus quos illum quasi dolores voluptas rerum, deleniti sunt rem."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_card">
+                <img src="./img/testimonials/img1.jpg" alt="">
+                <h1>I like 포르노</h1>
+                <span class="card_menu_rating"> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="testimonial_content">
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque itaque atque architecto ad, natus quos illum quasi dolores voluptas rerum, deleniti sunt rem."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_card">
+                <img src="./img/testimonials/img1.jpg" alt="">
+                <h1>Hatsune Miku</h1>
+                <span class="card_menu_rating"> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="testimonial_content">
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque itaque atque architecto ad, natus quos illum quasi dolores voluptas rerum, deleniti sunt rem."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_card">
+                <img src="./img/testimonials/img1.jpg" alt="">
+                <h1>Ali Baba</h1>
+                <span class="card_menu_rating"> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="testimonial_content">
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque itaque atque architecto ad, natus quos illum quasi dolores voluptas rerum, deleniti sunt rem."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_card">
+                <img src="./img/testimonials/img1.jpg" alt="">
+                <h1>Black Panther</h1>
+                <span class="card_menu_rating"> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="testimonial_content">
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque itaque atque architecto ad, natus quos illum quasi dolores voluptas rerum, deleniti sunt rem."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_card">
+                <img src="./img/testimonials/img1.jpg" alt="">
+                <h1>Goreden Ramsey</h1>
+                <span class="card_menu_rating"> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="testimonial_content">
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque itaque atque architecto ad, natus quos illum quasi dolores voluptas rerum, deleniti sunt rem."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_card">
+                <img src="./img/testimonials/img1.jpg" alt="">
+                <h1>John Doe</h1>
+                <span class="card_menu_rating"> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="testimonial_content">
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque itaque atque architecto ad, natus quos illum quasi dolores voluptas rerum, deleniti sunt rem."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_card">
+                <img src="./img/testimonials/img1.jpg" alt="">
+                <h1>John Doe</h1>
+                <span class="card_menu_rating"> 
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="testimonial_content">
+                  <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam eaque itaque atque architecto ad, natus quos illum quasi dolores voluptas rerum, deleniti sunt rem."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <footer>
+        Made By Robert Bamba, 10-B
+      </footer>
+      <footer>
+        ©2021||Robert Bamba
+      </footer>
+    </section>
+  </div>
+
+  <!-- Order Menu Bar -->
+
+  <div class="order" id="order">
+    <div class="order_exit">
+      <a href="#" onclick="order_open()"><i class="fas fa-times"></i></a>
+    </div>
+    <div class="order_content">
+      <div class="order_logo_container">
+        <div class="logo_order">
+          <img class="img_logo" src="./img/order/logo.png" alt="">
+          <h1>Ice<br> <span>Cream</span></h1>
+        </div>
+        <img class="logo_bg" src="./img/order/img1.jpg" alt="">
+      </div>
+      <div class="order_items_container">
+        <div class="order_items_title">
+          <h1>Your Items</h1><i class="fas fa-shopping-cart cart"></i>
+        </div>
+        <div class="order_items">
+          <div class="order_items_card">
+            <div class="item_self">Img</div>
+            <div class="item_self_name">
+              Flavor Name
+            </div>
+            <div class="order_item_price">
+              5AED
+            </div>
+            <a href="#">Cancel</a>
+          </div>
+          <div class="order_items_card">
+            <div class="item_self">Img</div>
+            <div class="item_self_name">
+              Flavor Name
+            </div>
+            <div class="order_item_price">
+              5AED
+            </div>
+            <a href="#">Cancel</a>
+          </div>
+          <div class="order_items_card">
+            <div class="item_self">Img</div>
+            <div class="item_self_name">
+              Flavor Name
+            </div>
+            <div class="order_item_price">
+              5AED
+            </div>
+            <a href="#">Cancel</a>
+          </div>
+          <div class="order_items_card">
+            <div class="item_self">Img</div>
+            <div class="item_self_name">
+              Flavor Name
+            </div>
+            <div class="order_item_price">
+              5AED
+            </div>
+            <a href="#">Cancel</a>
+          </div>
+          <div class="order_items_card">
+            <div class="item_self">Img</div>
+            <div class="item_self_name">
+              Flavor Name
+            </div>
+            <div class="order_item_price">
+              5AED
+            </div>
+            <a href="#">Cancel</a>
+          </div>
+          <div class="order_items_card">
+            <div class="item_self">Img</div>
+            <div class="item_self_name">
+              Flavor Name
+            </div>
+            <div class="order_item_price">
+              5AED
+            </div>
+            <a href="#">Cancel</a>
+          </div>
+          <div class="order_items_card">
+            <div class="item_self">Img</div>
+            <div class="item_self_name">
+              Flavor Name
+            </div>
+            <div class="order_item_price">
+              5AED
+            </div>
+            <a href="#">Cancel</a>
+          </div>
+        </div>
+      </div>
+      <div class="order_total_container">
+        <div class="total_order">
+          <div class="order_total">Total:</div>
+          <div class="order_total_price">35.00AED</div>
+        </div>
+      </div>
+      <div class="location_order">
+        <div class="location_order_title">
+          <h1>Your Location</h1><i class="fas fa-map-marker-alt"></i>
+        </div>
+        <input type="text" name="search" placeholder="Other_Location" class="location_search">
+        <div class="location_card_container">
+          <div class="location_card">
+            <p>Abu Dhabi</p>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="location_card">
+            <p>Dubai</p>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="location_card">
+            <p>Al Ain</p>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="location_card">
+            <p>Sarjah</p>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="location_card">
+            <p class="long_name_order">Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch</p>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="order_footer_container">
+        <a href="#">Pick-Up</a>
+        <a href="#" onclick="payment()">Online Delivery</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Payment -->
+
+  <div class="payment_container" id="payment">
+    <div class="pay_exit">
+      <a href="#" onclick="exitpay()"><i class="fas fa-times"></i></a>
+    </div>
+    <div class="payment">
+      <div class="payment-logo">
+        <p>P</p>
+      </div>
+      <h2>Payment Gateway</h2>
+      <div class="form">
+        <div class="card space icon-relative">
+          <label class="label">Card holder:</label>
+          <input type="text" class="input" placeholder="Coding Market">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="card space icon-relative">
+          <label class="label">Card number:</label>
+          <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+          <i class="far fa-credit-card"></i>
+        </div>
+        <div class="card space icon-relative">
+          <label class="label">Number</label>
+          <input type="text" class="input"data-mask="000 000 0000"  placeholder="Input Mobile-Number">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="card space icon-relative">
+          <label class="label">Gmail</label>
+          <input type="text" class="input" placeholder="Input Gmail">
+          <i class="fas fa-at"></i>
+        </div>
+        <div class="btn" onclick="payment_done()">
+          <button class="pay_btn">Order-Now</button>
+        </div>      
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  </div>
+
+  <!-- payment Notfication -->
+
+  <div class="payment_notfication_container" id="payment_notfication_container">
+    <div class="payment_notfication">
+      <h1>Thank you For Buying</h1>
+      <p>Your Order will be at your door step shortly. Thank you for ordering form Ice Cream™. Hope to serve you soon. See ya. </p>
+    </div>
+  </div>
+
+  <!-- Commercial -->
+
+  <div class="a_video_container" id="a_video_container">
+    <a onclick="video_exit()" href="#video"><i class="fas fa-sign-out-alt"></i></a>
+    <iframe class="a_video" width="1020" height="530" src="https://www.youtube.com/embed/0Kio3t3nXJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/scrolltosmooth/dist/scrolltosmooth.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const body = document.getElementById("body");
+    const warpper = document.getElementById("wrapper");
+    const nav = document.getElementById("nav");
+    const card = document.getElementById("card");
+    const video_main = document.getElementById("a_video_container");
+    const play_button = document.getElementById("play");
+    const order_tab = document.getElementById("order");
+    const payme = document.getElementById("payment");
+    const paymedone = document.getElementById("payment_notfication_container");
+
+    window.addEventListener("scroll", function () {
+      nav.classList.toggle('sticky', window.scrollY > 17);
+    });
+    function on(){
+      card.classList.add("active");
+      console.log("card_transition_has_start");
+    }
+    function off(){
+      card.classList.remove("active");
+      console.log("card_transition_has_end");
+    }
+
+    function video_play(){
+      body.classList.add("video_playing");
+      warpper.classList.add("video_playing");
+      video_main.classList.add("play");
+      nav.classList.remove("sticky");
+      console.log("video_is_now_playing");
+    }
+
+    function video_exit(){
+      body.classList.remove("video_playing");
+      warpper.classList.remove("video_playing");
+      video_main.classList.remove("play");
+      nav.classList.add("sticky");
+      console.log("video_is_now_playing");
+    }
+
+    function order_open(){
+      body.classList.toggle("video_playing");
+      order_tab.classList.toggle("open");
+      warpper.classList.toggle("order_tab_open");
+      paymedone.classList.remove("order_done");
+    }
+
+    function payment(){
+      payme.classList.toggle("active");
+      order_tab.classList.toggle("open");
+    }
+    function exitpay(){
+      payme.classList.toggle("active");
+      order_tab.classList.toggle("open");
+    }
+    function payment_done(){
+      payme.classList.toggle("active");
+      warpper.classList.toggle("order_tab_open");
+      paymedone.classList.add("order_done");
+      body.classList.toggle("video_playing");
+      console.log("Purchase Successful")
+    }
+
+    $(document).ready(function(){
+      const swiper = new Swiper('.My_swipper_about', {
+        direction: 'horizontal',
+        speed: 600,
+        loop: true,
+        allowTouchMove: false,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 9000,
+          disableOnInteraction: false,
+        },
+      });
+      swiper.on('slideChangeTransitionStart', function() {
+        anime({
+          targets: '.swiper-slide-active .about_us_img',
+          translateX: [-1000, 0],
+          opacity: [0, 1],
+          scale: [0, 1],
+          easing: 'easeInOutQuart'
+        });
+        anime({
+          targets: '.swiper-slide-active .about_us_content',
+          translateX: [1000, 0],
+          opacity: [0, 1],
+          easing: 'easeInOutQuart'
+        });
+        anime({
+          targets: '.swiper-slide-active .about_us_content h1',
+          translateY: [-100, 0],
+          opacity: [0, 1],
+          delay: anime.stagger(500, {start:500}),
+          easing: 'easeInOutQuart'
+        });
+        anime({
+          targets: '.swiper-slide-active .about_us_content p',
+          translateX: [100, 0],
+          opacity: [0, 1],
+          delay: anime.stagger(500, {start:600}),
+          easing: 'easeInOutQuart'
+        });
+      });
+    });
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      slidesPerGroup: 1,
+      speed: 600,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 9000,
+        disableOnInteraction: false,
+      },
+    });
+
+    const cursorInner = document.querySelector('.cursor');
+    const cursor = document.querySelector('#cursor');
+    const cursorCircle = cursor.querySelector('.cursor-circle');
+    const mouse = { x: -100, y: -100 }; // mouse pointer's coordinates
+    const pos = { x: 0, y: 0 }; // cursor's coordinates
+    const speed = 0.1; // between 0 and 1
+
+    const updateCoordinates = e => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    }
+
+    window.addEventListener('mousemove', updateCoordinates);
+
+    function getAngle(diffX, diffY) {
+      return Math.atan2(diffY, diffX) * 180 / Math.PI;
+    }
+
+    function getSqueeze(diffX, diffY) {
+      const distance = Math.sqrt(
+        Math.pow(diffX, 2) + Math.pow(diffY, 2)
+      );
+      const maxSqueeze = 0.15;
+      const accelerator = 1500;
+      return Math.min(distance / accelerator, maxSqueeze);
+    }
+
+    const updateCursor = () => {
+      const diffX = Math.round(mouse.x - pos.x);
+      const diffY = Math.round(mouse.y - pos.y);
+
+      pos.x += diffX * speed;
+      pos.y += diffY * speed;
+
+      const angle = getAngle(diffX, diffY);
+      const squeeze = getSqueeze(diffX, diffY);
+
+      const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
+      const rotate = 'rotate(' + angle +'deg)';
+      const translate = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
+
+      cursorInner.style.transform = translate;
+      cursor.style.transform = translate;
+      cursorCircle.style.transform = rotate + scale;
+    };
+
+    function loop() {
+      updateCursor();
+      requestAnimationFrame(loop);
+    }
+
+    requestAnimationFrame(loop);
+
+    const cursorModifiers = document.querySelectorAll('[cursor-class]');
+
+    cursorModifiers.forEach(curosrModifier => {
+      curosrModifier.addEventListener('mouseenter', function() {
+        const className = this.getAttribute('cursor-class');
+        cursor.classList.add(className);
+        cursorInner.style.opacity = "0";
+      });
+
+      curosrModifier.addEventListener('mouseleave', function() {
+          const className = this.getAttribute('cursor-class');
+          cursor.classList.remove(className);
+          cursorInner.style.opacity = "1";
+      });
+    });
+
+    var smoothScroll = new scrollToSmooth('a', {
+      targetAttribute: 'href',
+      duration: 400,
+      durationRelative: false,
+      durationMin: false,
+      durationMax: false,
+      easing: 'easeOutCubic',
+      onScrollStart: (data) => { console.log(data); },
+      onScrollUpdate: (data) => { console.log(data); },
+      onScrollEnd: (data) => { console.log(data); },
+      fixedHeader: null
+    })
+
+    smoothScroll.init();
+
+    var art420 = "                                                                                        \n\
+                                                                                                          \n\
+                                                                                                          \n\
+                                                                                                          \n\
+                                                                                                          \n\
+                                                                                                          \n\
+      ___________________                                                                                 \n\
+      |     |            |                                                                                \n\
+      |     |             |                                                                               \n\
+      |     |             |   ______________   ___________      ___________   __________    ____________  \n\
+      |     |             |   |    |       |   |    |     |     |    |        |    |    |      |    |     \n\
+      |     |             |   |    |       |   |    |    /      |    |        |    |     |     |    |     \n\
+      |     |            /    |    |       |   |    |___/__     |    |----    |    |     /     |    |     \n\
+      |     |-----------|     |    |       |   |    |      |    |    |        |    |----|      |    |     \n\
+      |     |            |    |    |       |   |    |      |    |    |        |    |     |     |    |     \n\
+      |     |             |   |____|_______|   |____|_____/     |____|_____   |____|     |     |____|     \n\
+      |     |              |                                                                              \n\
+      |     |              |                                                                              \n\
+      |_____|              |                                                                              \n\
+                                                                                                          \n\
+                  00000000                                                                                \n\
+                  00000000                                                                                \n\
+               00000000000000                                                                             \n\
+                000000000000                                                                              \n\
+                  00000000                                                                                \n\
+                   000000                                                                                 \n\
+                    0000                                                                                  \n\
+                     00                                                                                   \n";
+
+    var art = "                             \n\
+                   _⎯⎯⎯⎯⎯⎯⎯__               \n\
+                 「   ﹍﹍﹍﹍│              \n\
+                  │ ───  ──│     _______    \n\
+                  │   ▐  ▐ │    |       |   \n\
+                  │  )───  │   ╱   HI!  |   \n\
+                  │________│ ∠__________|   \n\
+                    │ │                     \n\
+                _____│ │_____     ___       \n\
+              ╱             ╲   │_  │       \n\
+              │   |      /  │  [ │  │       \n\
+              │  |       |  │  |____│       \n\
+        ______│___|______|__│___│__│____    \n";
+
+    var art2 = "                                                                   \n\
+    _____________________________________________________________________________  \n\
+    |         __╷˄╷_╷˄╷_                                     __________         |  \n\
+    |         │   ___  │                                     │        │         |  \n\
+    |         │ ──  ── │    __________         __________    │ ──  ── │         |  \n\
+    |         │  ▐   ▐ │   │          │       |         |    │ ▐   ▐  │         |  \n\
+    |         │  )───  │  _│  HELLO!  │       |   Hey!  |_   │  ───{  │         |  \n\
+    |         │________│ <____________│       |___________>  │________│         |  \n\
+    |           │ │                                              | |            |  \n\
+    |       ____│ │_____     ___                      __    _____| |____        |  \n\
+    |      {            }   │_  │                    │ _│_ { _       _  }       |  \n\
+    |      │   |     /  │  [ │  │                    │ [ │ │ │       │  │       |  \n\
+    |      │  |      │  │  │____│                    │___│ │ │      │   │       |  \n\
+    |   ___│   |_____│  │___│  │____               ___│ │__│ │______│   │___    |  \n\
+    |___________________________________________________________________________|  \n\
+                                                                                   \n";
+
+    console.log(art420, art, art2);
+  </script>
+</body>
+</html>

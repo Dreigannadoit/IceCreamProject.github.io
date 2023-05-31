@@ -1,0 +1,120 @@
+/*
+  +-- Made By Robert Bamba --+
+  +-- All Ownerships go to Robert Bamba||2021© --+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap");
+
+/*font-family: 'Mali', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Kaushan Script', cursive;*/
+
+/*-- Main body alignment --*/
+html,
+*,
+body {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  transition: 0.5s;
+}
+
+/* nav-bar (absolute) */
+.nav_container {
+  position: absolute;
+  height: 12vh;
+  width: 100%;
+  background: #fff9f9;
+  z-index: 99999;
+  transition: 0.5s;
+}
+
+.nav_container .nav {
+  height: 100%;
+  width: 100%;
+  margin: 20px 30px 30px 30px;
+}
+
+.nav_container .nav .logo_container {
+  position: absolute;
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+}
+
+.nav_container .nav .logo_container .logo {
+  font-size: 5mm;
+  line-height: 90%;
+  color: #f36d8f;
+  margin: 0px 0px 0px 160px;
+}
+
+.nav_container .nav .logo_container .logo span {
+  font-size: 10mm;
+}
+
+.nav_container .nav nav {
+  position: absolute;
+  right: 0%;
+  margin: 15px 290px 10px 10px;
+}
+
+.nav_container .nav nav ul {
+  list-style: none;
+}
+
+.nav_container .nav nav ul li {
+  display: inline;
+}
+
+.nav_container .nav nav ul li a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: #be4b68;
+}
+
+.nav_container .nav .cart {
+  position: absolute;
+  right: 170px;
+  top: 31%;
+  color: #be4b68;
+  margin: 0px 10px 10px 10px;
+  background: #fff;
+  border-radius: 100%;
+  padding: 12px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.nav_container .nav .items {
+  position: absolute;
+  right: 170px;
+  top: 30%;
+  color: #ffffff;
+  background: #d10606;
+  border-radius: 100%;
+  padding: 3px 7px 1px 7px;
+  font-size: 12px;
+}
+
+.menu {
+  position: absolute;
+  top: 12vh;
+  height: calc(100% - 12vh);
+  width: 100%;
+  background: url(../img/menu/img10.jpg) no-repeat 0 0 / cover;
+}
